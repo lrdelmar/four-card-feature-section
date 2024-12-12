@@ -1,0 +1,9 @@
+@use '../abstracts/' as a;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: min(a.rem(320));
+  justify-content: space-between;
+  padding: a.rem(30);
+}

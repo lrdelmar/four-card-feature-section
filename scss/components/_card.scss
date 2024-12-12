@@ -1,0 +1,25 @@
+@use '../abstracts/' as a;
+
+.card {
+  padding: a.rem(20);
+  display: flex;
+  flex-direction: column;
+  //   gap: a.rem(10);
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 a.rem(5) a.rem(15) a.$blue-gray;
+  margin-bottom: a.rem(15);
+  border-radius: a.rem(12);
+
+  &__title {
+    // margin-bottom: a.rem(5);
+  }
+
+  &__text {
+    font-size: a.rem(10);
+  }
+
+  &__img {
+    width: a.rem(40);
+    align-self: flex-end;
+  }
+}

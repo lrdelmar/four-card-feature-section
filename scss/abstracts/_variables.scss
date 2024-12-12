@@ -1,0 +1,30 @@
+@use 'functions' as f;
+
+// font
+$main-font: '"Poppins", serif;';
+
+// colours
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+$light-gray: hsl(0, 0%, 98%);
+$blue-gray: hsl(229, 6%, 66%);
+$dark-gray: hsl(234, 12%, 34%);
+
+// breakpoints
+
+// 320px, 768px, 1024px
+$breakpoints-up: (
+  'small': f.em(320),
+  'medium': f.em(768),
+  'large': f.em(1024),
+);
+
+// 319.98, 767.98px, 1023.98px
+$breakpoints-down: (
+  'small': f.em(319.98),
+  'medium': f.em(767.98),
+  'large': f.em(1023.98),
+);

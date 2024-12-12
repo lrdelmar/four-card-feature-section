@@ -1,0 +1,28 @@
+@use '../abstracts' as a;
+
+h2,
+h3,
+h4 {
+  color: a.$dark-gray;
+}
+
+h2 {
+  font-weight: 200;
+}
+
+h2,
+h3 {
+  font-size: a.rem(20);
+  text-align: center;
+}
+
+h3,
+h4 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+  color: a.$blue-gray;
+  font-size: a.rem(15);
+}

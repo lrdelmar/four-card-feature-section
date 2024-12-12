@@ -1,0 +1,8 @@
+@use '../abstracts/' as a;
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: a.$light-gray;
+}
