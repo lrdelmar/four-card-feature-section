@@ -1,8 +1,11 @@
 @use '../abstracts/' as a;
 
 body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   background-color: a.$light-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100vw;
 }

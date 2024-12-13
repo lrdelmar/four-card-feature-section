@@ -1,7 +1,11 @@
+@use '../abstracts/' as a;
+
 .attribution {
-  font-size: 11px;
+  font-size: a.rem(11);
   text-align: center;
+  align-self: flex-end;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }

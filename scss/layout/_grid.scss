@@ -6,4 +6,18 @@
   width: min(a.rem(320));
   justify-content: space-between;
   padding: a.rem(30);
+
+  &__heading {
+    text-align: center;
+    padding-top: a.rem(40);
+    padding-bottom: a.rem(70);
+
+    h3 {
+      margin-bottom: a.rem(10);
+    }
+
+    p {
+      font-size: a.rem(13);
+    }
+  }
 }

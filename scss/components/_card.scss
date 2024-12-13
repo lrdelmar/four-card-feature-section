@@ -1,25 +1,43 @@
 @use '../abstracts/' as a;
 
 .card {
+  height: min(a.rem(185));
   padding: a.rem(20);
   display: flex;
   flex-direction: column;
-  //   gap: a.rem(10);
+  justify-content: space-between;
   background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 a.rem(5) a.rem(15) a.$blue-gray;
-  margin-bottom: a.rem(15);
-  border-radius: a.rem(12);
+  box-shadow: 0 a.rem(1) a.rem(10) a.$blue-gray;
+  margin-bottom: a.rem(20);
+  border-radius: a.rem(8);
+
+  &__supervisor {
+    border-top: 3px solid a.$cyan;
+  }
+
+  &__teambuilder {
+    border-top: 3px solid a.$red;
+  }
+
+  &__karma {
+    border-top: 3px solid a.$orange;
+  }
+
+  &__calculator {
+    border-top: 3px solid a.$blue;
+  }
 
   &__title {
-    // margin-bottom: a.rem(5);
+    margin-bottom: a.rem(0);
   }
 
   &__text {
-    font-size: a.rem(10);
+    font-size: a.rem(11);
+    margin-bottom: a.rem(20);
   }
 
   &__img {
-    width: a.rem(40);
+    width: a.rem(45);
     align-self: flex-end;
   }
 }
