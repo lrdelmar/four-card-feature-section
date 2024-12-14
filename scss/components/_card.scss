@@ -2,14 +2,16 @@
 
 .card {
   height: min(a.rem(185));
+  width: min(a.rem(260));
   padding: a.rem(20);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 a.rem(1) a.rem(10) a.$blue-gray;
+  // box-shadow: 0 a.rem(15) a.rem(14) a.rem(-4) a.$blue-gray;
+  box-shadow: 0 a.rem(15) a.rem(14) a.rem(-2) a.$shadow;
   margin-bottom: a.rem(20);
-  border-radius: a.rem(8);
+  border-radius: a.rem(4);
 
   &__supervisor {
     border-top: 3px solid a.$cyan;
@@ -39,5 +41,27 @@
   &__img {
     width: a.rem(45);
     align-self: flex-end;
+  }
+
+  @include a.breakpoint(large) {
+    &__supervisor {
+      grid-column: 1;
+      grid-row: 3 / 4;
+    }
+
+    &__teambuilder {
+      grid-column: 2;
+      grid-row: 2/4;
+    }
+
+    &__karma {
+      grid-column: 2;
+      grid-row: 3/5;
+    }
+
+    &__calculator {
+      grid-column: 3;
+      grid-row: 3/4;
+    }
   }
 }

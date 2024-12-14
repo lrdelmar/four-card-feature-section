@@ -9,15 +9,30 @@
 
   &__heading {
     text-align: center;
-    padding-top: a.rem(40);
-    padding-bottom: a.rem(70);
+    padding-block: a.rem(50);
 
     h3 {
       margin-bottom: a.rem(10);
     }
 
     p {
-      font-size: a.rem(13);
+      font-size: a.rem(12);
+    }
+  }
+
+  @include a.breakpoint(large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: a.rem(20);
+    justify-content: center;
+    align-items: center;
+
+    &__heading {
+      width: a.rem(420);
+      justify-self: center;
+      grid-column: 1 /4;
+      grid-row: 1 / 3;
     }
   }
 }

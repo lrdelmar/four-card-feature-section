@@ -1,14 +1,14 @@
-@use 'functions' as f;
+@use 'variables' as v;
 
 @mixin breakpoint($size) {
-  @media (min-width: map-get($breakpoints-up, $size)) {
+  @media (min-width: map-get(v.$breakpoints-up, $size)) {
     @content;
   }
 }
 
 // max-width won't go larger than chosen width
 @mixin breakpoint-down($size) {
-  @media (max-width: map-get($breakpoints-down, $size)) {
+  @media (max-width: map-get(v.$breakpoints-down, $size)) {
     @content;
   }
 }
