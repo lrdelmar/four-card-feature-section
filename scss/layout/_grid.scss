@@ -3,8 +3,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  width: min(a.rem(320));
-  justify-content: space-between;
+  max-width: a.rem(460);
   padding: a.rem(30);
 
   &__heading {
@@ -20,8 +19,8 @@
     }
   }
 
-  @include a.breakpoint(large) {
-    display: grid;
+  @include a.breakpoint(medium) {
+    max-width: a.rem(1000);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     column-gap: a.rem(20);

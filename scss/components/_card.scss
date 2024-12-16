@@ -2,40 +2,33 @@
 
 .card {
   height: min(a.rem(185));
-  width: min(a.rem(260));
-  padding: a.rem(20);
+  padding-inline: a.rem(25);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: hsl(0, 0%, 100%);
-  // box-shadow: 0 a.rem(15) a.rem(14) a.rem(-4) a.$blue-gray;
   box-shadow: 0 a.rem(15) a.rem(14) a.rem(-2) a.$shadow;
   margin-bottom: a.rem(20);
-  border-radius: a.rem(4);
+  border-radius: a.rem(6);
 
   &__supervisor {
-    border-top: 3px solid a.$cyan;
+    border-top: 4px solid a.$cyan;
   }
 
   &__teambuilder {
-    border-top: 3px solid a.$red;
+    border-top: 4px solid a.$red;
   }
 
   &__karma {
-    border-top: 3px solid a.$orange;
+    border-top: 4px solid a.$orange;
   }
 
   &__calculator {
-    border-top: 3px solid a.$blue;
-  }
-
-  &__title {
-    margin-bottom: a.rem(0);
+    border-top: 4px solid a.$blue;
   }
 
   &__text {
     font-size: a.rem(11);
-    margin-bottom: a.rem(20);
   }
 
   &__img {
@@ -43,7 +36,9 @@
     align-self: flex-end;
   }
 
-  @include a.breakpoint(large) {
+  @include a.breakpoint(medium) {
+    height: min(a.rem(228));
+
     &__supervisor {
       grid-column: 1;
       grid-row: 3 / 4;

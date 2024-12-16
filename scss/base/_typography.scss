@@ -15,7 +15,7 @@ h3 {
   font-size: a.rem(20);
   text-align: center;
 
-  @include a.breakpoint(large) {
+  @include a.breakpoint(medium) {
     font-size: a.rem(28);
   }
 }
